@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 
 public class ExtraSauce implements ModInitializer {
 	public static final String MOD_ID = "extra-sauce";
+	// random comment
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
