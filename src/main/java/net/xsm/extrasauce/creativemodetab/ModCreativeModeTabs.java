@@ -8,6 +8,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.xsm.extrasauce.ExtraSauce;
+import net.xsm.extrasauce.block.ModBlocks;
 import net.xsm.extrasauce.item.ModItems;
 
 public class ModCreativeModeTabs {
@@ -20,6 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.EXTRASAUCE);
                         output.accept(ModItems.FLORAL_SCYTHE);
+                        output.accept(ModBlocks.EXTRASAUCEBLOCK);
                     }).build());
 
     public static void registerModCreativeModeTabs() {
