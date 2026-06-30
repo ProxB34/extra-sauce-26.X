@@ -2,6 +2,8 @@ package net.xsm.extrasauce;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.xsm.extrasauce.datagen.ModBlockLootTableProvider;
+import net.xsm.extrasauce.datagen.ModBlockTagsProvider;
 import net.xsm.extrasauce.datagen.ModModelProvider;
 
 public class ExtraSauceDataGenerator implements DataGeneratorEntrypoint {
@@ -10,5 +12,7 @@ public class ExtraSauceDataGenerator implements DataGeneratorEntrypoint {
 		var pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModBlockTagsProvider::new);
+		pack.addProvider(ModBlockLootTableProvider::new);
 	}
 }

@@ -15,9 +15,13 @@ import net.xsm.extrasauce.ExtraSauce;
 import java.util.function.Function;
 
 public class ModBlocks {
+    // Helper method for Tags
+    public static ResourceKey<Block> getRK(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+    }
 
     public static final Block EXTRASAUCEBLOCK = registerBlock("extrasauce_block",
-            properties -> new Block(properties.strength(4f)
+            properties -> new Block(properties.strength(1f)
                     .requiresCorrectToolForDrops().sound(SoundType.WOOL)));
 
 
