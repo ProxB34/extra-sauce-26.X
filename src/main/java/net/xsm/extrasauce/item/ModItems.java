@@ -18,7 +18,7 @@ public class ModItems {
     public static final Item EXTRASAUCE = registerItem( "extrasauce", Item::new);
 
 
-    public static final Item FLORAL_SCYTHE = registerItem("floral_scythe", Item::new);
+    public static final Item FLORAL_SCYTHE = registerItem("floral_scythe",Item::new);
 
 
     //register "helper" method
